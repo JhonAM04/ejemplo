@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+    <style>
+        input:valid {
+            background-color: green;
+        }
+        input:invalid{
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    
+    <form >
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" minlength="10" maxlength="20" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label>Edad</label>
+            <input type="number">
+        </div>
+        <div>
+            <label>Fecha</label>
+            <input type="date">
+        </div>
+        <div>
+            <label>correo</label>
+            <input type="email">
+        </div>
+        <div>
+            <label>selecione un archivo</label>
+            <input type="file">
+        </div>
+        <div>
+            <label>telefono</label>
+            <input type="tel" maxlength="9">
+        </div>
+        <div>
+            <label>contraseña</label>
+            <input type="password" maxlength="9">
+        </div>
+        <div>
+            <label>selecione un color</label>
+            <input type="color">
+        </div>
+        <div>
+            <label>selecione un rango</label>
+            <input type="range">
+        </div>
+        <div>
+            <label>url</label>
+            <input type="url">
+        </div>
+        <div>
+            <label>buscar</label>
+            <input type="search">
+        </div>
+        <div>
+            <input type="reset">
+        </div>
+    </form>
 </body>
 </html>
