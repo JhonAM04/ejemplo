@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaginaGamer</title>
+    <script>
+        window.onload = function() {
+            if (performance.navigation.type === 1) { // 1 significa que la página se recargó
+                window.location.href = "PaginaGamer.html"; // Cambia por la URL de tu página de inicio
+            }
+        };
+    </script>
     <style>
         /* min-height= sirve para asignar un valor minimo a la altura, es decir por ejemplo, un div tomara cualquier valor pero que este no sea menor al minimo propuesto.
            el margin tiene la propiedad auto, es decir que tomara valores segun sea necesario, ademas sus ejes tienen el siguiente orden margin= top,rigth, bottom, left.
@@ -73,6 +80,8 @@
             margin-left: 185px;
             margin-right: 185px;
             width: 770px;
+            animation-duration: 3s;
+            animation-name: slidein;
         }
 
         .cajaEnlaces{
@@ -127,6 +136,19 @@
             color: gainsboro;
             width: 417px;
         }
+
+        @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 100%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
     </style>
 </head>
 <body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: auto;
+        }
+
+        .cuerpo{
+            background-image: url(https://images03.nicepage.io/a1389d7bc73adea1e1c1fb7e/5da3016d00d05b7da6905540/pexelsphoto2620303.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            
+        }
+
+        .texto{
+            min-height: 671px;
+            width: 1140px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            justify-content: flex-end;
+        }
+
+        h1{
+            color: antiquewhite;
+            font-size: 60px;
+            margin-top: 20px;
+            display: table;
+            margin-bottom: 0;
+            animation-duration: 3s;
+            animation-name: slidein;
+            
+        }
+
+        h3{
+            color: antiquewhite;
+            display: table;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+
+        @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 100%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <section class="cuerpo">
+        <div class="texto">
+            <h1>Las Montañas</h1>
+            <h3>ESTAN LLAMANDO Y DEBO IR</h3>
+        </div>
+    </section>
+</body>
+</html>
