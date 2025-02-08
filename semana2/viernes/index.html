@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+        }
+
+        p{
+            color: blue;
+            font-size: 20px;
+        }
+
+        header{
+            background-color: blueviolet;
+            padding: 20px;
+            
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between; /* Distribuye los elementos */
+            align-items: center; /* Alinea verticalmente */
+            
+        }
+
+        .menu{
+            position: absolute; /* Posiciona con respecto al nav */
+            margin-left: 50%;
+        }
+
+        header button{
+            background-color: blueviolet;
+            
+        }
+
+        body{
+            background-color: #1a1a1a;
+            margin: 0;
+        }
+
+        button{
+            border: 0;
+            background-color: aquamarine;
+            width: 100px;
+            height: 50px;
+            /*padding para ajustar el tamaño en ambos lados */
+            border-radius: 30%;
+        }
+
+        button:hover{
+            background-color: darkcyan;
+        }
+
+        #aj:visited{
+            color: green;
+        }
+
+        .secciones{
+            color: black;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .secciones:hover{
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 10%;
+        }
+
+        .card{
+            background: linear-gradient( 45deg, rgb(141, 47, 179), rgb(16, 194, 170));
+            width: 26vw;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px 10px rgb(207, 31, 207);
+            margin: 20px;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <h3>ESTILOSCSS</h3>
+            
+            <div class="menu">
+            <a href="" class="secciones">INICIO</a>
+            <a href="" class="secciones">IMAGENES</a>
+            <a href="" class="secciones">FORO</a>
+            <a href="" class="secciones">CONTACTANOS</a>
+            </div>
+        
+        </nav>
+    </header>
+
+
+
+    <h1>Esta es una prueba con css</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iure laborum soluta iste, eaque deserunt veniam amet molestiae, in vel quam nam facilis. Hic odit error laborum labore quae! Laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iure laborum soluta iste, eaque deserunt veniam amet molestiae, in vel quam nam facilis. Hic odit error laborum labore quae! Laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iure laborum soluta iste, eaque deserunt veniam amet molestiae, in vel quam nam facilis. Hic odit error laborum labore quae! Laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iure laborum soluta iste, eaque deserunt veniam amet molestiae, in vel quam nam facilis. Hic odit error laborum labore quae! Laboriosam!</p>
+
+    <div class="card">
+        <img src="../../semana1/gato.webp" alt="" width="500px">
+        <div>
+            <p>GATOS SALVAJES</p>
+        </div>
+    </div>
+
+    <button>
+        Nuevo boton
+    </button> <br>
+
+    <a href="" id="aj">Nuevo enlace</a>
+</body>
+</html>
