@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --backgroundcolor: #121826;
+    --rosapastel:#FBE5E6;
+    --amarillopastel:#FCEED8;
+    --celestepastel:#DEE9FC;
+    --colortarjeta:#212936;
+    --colortitulo:#E5E7EB;
+    --colorsubtitulo:#9DA3AE;
+    --colorTexTarjeta:#D2D5DA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--backgroundcolor);
+    background-image: url(../resources/Background_image@3x.png);
+    background-position: center;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    gap: 3em;
+}
+
+header h1{
+    font-weight: 600px;
+    font-size: 40px;
+}
+
+h1, h3 {
+    color: var(--colortitulo);
+}
+
+header{
+    text-align: center;
+    width: 400px;
+    margin-top: 3em;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+header p{
+    margin-top: 10px;
+    color: var(--colorsubtitulo);
+}
+
+main{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*ESTILOS PARA LAS TARJETAS */
+article{
+    background-color: var(--colortarjeta);
+    width: 300px;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article p{
+    width: 70%;
+    font-weight: 400px;
+}
+
+.descripcionT{
+    color: var(--colorTexTarjeta);
+}
+
+.iconos{
+    width: fit-content;
+    background-color: aquamarine;
+    padding: .5em;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+article:nth-child(1) .iconos{
+    background-color: var(--amarillopastel);
+}
+
+article:nth-child(2) .iconos{
+    background-color: var(--celestepastel);
+}
+
+article:nth-child(3) .iconos{
+    background-color: var(--rosapastel);
+}
+
+article img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+@media (width<1090px){
+    body{
+        padding: 3em 0;
+    }
+}
+
+@media (width <= 640px){
+    header{
+        width: 96%;
+    }
+}

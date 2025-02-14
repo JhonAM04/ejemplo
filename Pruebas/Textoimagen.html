@@ -33,7 +33,7 @@
             margin-top: 20px;
             display: table;
             margin-bottom: 0;
-            animation-duration: 3s;
+            animation-duration: 3s; /* animation duration define la duracion de la animacion, animatio name es el nombre para identificar a la animacion*/
             animation-name: slidein;
             
         }
@@ -47,13 +47,13 @@
             animation-name: slidein;
         }
 
-        @keyframes slidein {
+        @keyframes slidein { /* Keyframes (nombre de la animacion), donde el from indica donde ubicara el inicio de la animacion con el margin left, es decir, que tanto a la izquierda dentro del div o seccion donde se encuentre*/
         from {
             margin-left: 100%;
             width: 100%;
         }
 
-        to {
+        to { /* el to significa donde terminara la animacion*/
             margin-left: 0%;
             width: 100%;
         }
