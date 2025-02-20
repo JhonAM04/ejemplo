@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: aqua;
+    height: 100px;
+    
+}
+
+header{
+    background-color: blue;
+    height: 300px;
+}
+
+main{
+    background-color: yellow;
+    height: 500px;
+    
+}
+
+main div{
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+
+footer{
+    background-color: brown;
+    height: 300px;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    background-color: chartreuse;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.whatsapp:hover{
+    background-color: rgb(66, 116, 16);
+}
